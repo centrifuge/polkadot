@@ -23,6 +23,7 @@ serde = { version = "1.0.101", optional = true, features = ["derive"] }
 
 frame-support = { git = "https://github.com/centrifuge/substrate", default-features = false , branch = "master" }
 frame-system = { git = "https://github.com/centrifuge/substrate", default-features = false , branch = "master" }
+max-encoded-len = { git = "https://github.com/centrifuge/substrate", default-features = false, features = ["derive"] , branch = "master" }
 sp-api = { git = "https://github.com/centrifuge/substrate", default-features = false , branch = "master" }
 sp-core = { git = "https://github.com/centrifuge/substrate", default-features = false , branch = "master" }
 sp-io = { git = "https://github.com/centrifuge/substrate", default-features = false , branch = "master" }
@@ -41,6 +42,7 @@ std = [
 	"hash256-std-hasher/std",
 	"impl-codec/std",
 	"impl-serde",
+	"max-encoded-len/std",
 	"parity-util-mem/std",
 	"serde",
 	"sp-api/std",
